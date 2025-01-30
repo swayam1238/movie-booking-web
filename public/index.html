@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Seat Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Seat Booking</h1>
+
+        <form id="bookingForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="movie">Choose Movie:</label>
+            <select id="movie" required>
+                <option value="1">KGF 2 - 1:00 PM</option>
+                <option value="2">Bahubali - 5:00 PM</option>
+                <option value="3">Avatar - 8:00 PM</option>
+            </select>
+
+            <label for="seats">Choose Seats:</label>
+            <input type="text" id="seats" placeholder="e.g., 2B, 3C" required>
+
+            <button type="submit">Book Seats</button>
+        </form>
+
+        <div id="bookingSummary" class="hidden">
+            <h2>Booking Summary</h2>
+            <p id="summaryName"></p>
+            <p id="summaryMovie"></p>
+            <p id="summarySeats"></p>
+            <p id="summaryCost"></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
